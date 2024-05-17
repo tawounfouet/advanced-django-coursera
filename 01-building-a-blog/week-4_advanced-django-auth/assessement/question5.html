@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Question 5{% endblock %}
+{% block content %}
+    {# Question 5: Render the registration form #}
+    <form method="post" action="{% url 'django_registration_register' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+{% endblock %}
+
+
