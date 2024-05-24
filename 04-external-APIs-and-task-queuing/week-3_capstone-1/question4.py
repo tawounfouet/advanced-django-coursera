@@ -63,6 +63,6 @@ class AttendanceForm(forms.ModelForm):
         model = MovieNightInvitation
         fields = ["is_attending"]
 
-    def __init__(self, *args, **kwargs):
-        super(AttendanceForm, self).__init__(*args, **kwargs)
-        self.fields["is_attending"].label = "Attending?"
+    # def __init__(self, *args, **kwargs):
+    #     super(AttendanceForm, self).__init__(*args, **kwargs)
+    #     self.fields["is_attending"].label = "Attending?"
