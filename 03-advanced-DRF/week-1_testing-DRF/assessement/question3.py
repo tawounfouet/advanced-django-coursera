@@ -1,4 +1,5 @@
 # Question 3: Add your imports here
+from django.test import TestCase
 from django.contrib.auth import get_user_model
 from rest_framework.authtoken.models import Token
 from rest_framework.test import APIClient
